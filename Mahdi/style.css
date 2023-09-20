@@ -57,6 +57,9 @@
 .items-end{
   align-items: flex-end;
 }
+.justify-around {
+  justify-content: space-around;
+}
 
 .gri{
   display: grid;
@@ -75,37 +78,63 @@
   transform: rotate(180deg);
 }
 
-.half-circle {
+/* .half-circle {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-bottom: 100px solid #000; 
   border-radius: 50px 50px 0 0; 
-}
+} */
 
 .circle {
   bottom: 0;
-  border-bottom: 1px solid rgba(131, 128, 128, 0.32);
-  border-right: 1px solid rgba(131, 128, 128, 0.32);
+  border-bottom: 1px solid rgba(131, 128, 128, 0.133);
+  border-right: 1px solid rgba(131, 128, 128, 0.133);
   border-radius: 0 0 100% 0; 
-  width: 96%; 
-  height: 100%; 
+  /* width: 96%;  */
+  /* height: 100%;  */
 }
 
 .leftcircle{
     right: 5px;
-    border-top: 1px solid rgba(131, 128, 128, 0.32);
-    border-left: 1px solid rgba(131, 128, 128, 0.32);
+    border-top: 1px solid rgba(131, 128, 128, 0.133);
+    border-left: 1px solid rgba(131, 128, 128, 0.133);
     border-radius: 100% 0 0  0 ; 
-    width: 96%; 
+    width: 92%; 
     height: 100%; 
 }
 
+
+
+
+
+.ellipse{
+  border-left: 1px solid rgba(131, 128, 128, 0.133);
+  border-top: 1px solid rgba(131, 128, 128, 0.133);
+  border-right: 1px solid rgba(131, 128, 128, 0.133);
+  height: 87vh;
+  width: 96%;
+  right: 0%;
+  top: -0.2%;
+  /* bottom: 2%; */
+  border-radius:  50%;
+}
+
+
+.half-circle {
+  width: 100px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border: 2px solid blue; /* Adjust the border color and thickness as needed */
+  border-radius: 50% 50% 0 0; /* Creates the top half of a circle */
+  border-bottom: none; /* Removes the bottom border */
+}
+
+
 .rightcircle{
   /* border-top: 1px solid red; */
-  border-top: 1px solid rgba(131, 128, 128, 0.32);
-  border-right: 1px solid rgba(131, 128, 128, 0.32);
+  border-top: 1px solid rgba(131, 128, 128, 0.133);
+  border-right: 1px solid rgba(131, 128, 128, 0.133);
   border-radius:    0 120rem   0 0  ;
   width: 100%;
   height: 100%;
@@ -113,7 +142,7 @@
 }
 
 .textDownSearch{
-  border-bottom: 1px solid rgba(131, 128, 128, 0.32);
+  border-bottom: 1px solid rgba(131, 128, 128, 0.133);
   padding-bottom: 12px; 
   padding-top: 12px;
   display: inline-block
@@ -123,8 +152,8 @@
   height: 60%;
   width: 100%;
   position: absolute;
-  border-right:  1px solid rgba(131, 128, 128, 0.32);
-  border-top:  1px solid rgba(131, 128, 128, 0.32);
+  border-right:  1px solid rgba(131, 128, 128, 0.133);
+  border-top:  1px solid rgba(131, 128, 128, 0.133);
   
   border-radius:       0  100% 0 0 ;
   z-index: 3;
@@ -132,13 +161,14 @@
 }
 
 .circlDown{
-  height: 40%;
-  width: 100%;
+  
   position: absolute;
-  bottom: 0;
+  height: 44%;
+  width: 30%;
   right: 0;
-  border-right: 1px solid rgba(131, 128, 128, 0.32);
-  border-radius:      0   0% 85%  0;
+  bottom: 0%;
+  border-right: 1px solid rgba(131, 128, 128, 0.133);
+  border-radius:   0 0 90% 0;
 
 }
 .w-full{
@@ -162,10 +192,13 @@
 }
 
 .divDownLeft{
-  position: absolute; height: 100%; width: 100%;  border-right: 1px solid rgba(131, 128, 128, 0.32); z-index: 4;
+  position: absolute; height: 100%; width: 100%;  border-right: 1px solid rgba(131, 128, 128, 0.133); z-index: 4;
 }
 .border-b{
-  border-bottom: 1px solid rgba(131, 128, 128, 0.32);
+  border-bottom: 1px solid rgba(131, 128, 128, 0.133);
+}
+.border-r{
+  border-right: 1px solid rgba(131, 128, 128, 0.133);
 }
 
 .relative{
@@ -208,3 +241,46 @@
     background-color: white; /* Adjust the color of the cut-off part */
   }
   
+  .rounded-t-l {
+    border-top-left-radius: 0.4rem;
+  }
+
+  .s-home{
+    width: 80%;
+    height: 75%; 
+    padding-top: 1.2rem; 
+    opacity: 0.6;
+  }
+
+  .my {
+    width: 100%; /* Adjust the width and height based on your requirements */
+    height: 100%;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0 100%, 0 27%);
+    background-color: #ff6635;
+  }
+
+  .small{
+    width: 85px;
+    height: 90px;
+    /* background-color: #ff6635; */
+    background-color: rgb(147, 139, 139);
+    cursor: pointer;
+    transform: rotate(1deg);
+    clip-path: polygon(100% 53.33%, 82.5% 68.84%, 0% 68.84%, 0% 45.99%, 16.27% 29.95%, 100% 29.95%);
+  }
+  .custom-shape {
+    /* position: absolute; */
+    
+    width: 85px; /* Adjust width and height based on your requirements */
+    height: 90px;
+    background-color: rgb(147, 139, 139);
+    cursor: pointer;
+    transform: rotate(1deg);
+    clip-path: polygon(100% 53.33%, 82.5% 68.84%, 0% 68.84%, 0% 45.99%, 16.27% 29.95%, 100% 29.95%);
+    color: white; /* Adjust text color to make it visible */
+    font-size: 20px; /* Adjust text size */
+  }
+
+  .text-slate{
+    color: rgb(85, 91, 98);
+  }
