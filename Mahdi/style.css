@@ -105,7 +105,9 @@
     height: 100%; 
 }
 
-
+.line-3 {
+  border-top: 1px solid black;
+}
 
 
 
@@ -113,6 +115,7 @@
   border-left: 1px solid rgba(131, 128, 128, 0.133);
   border-top: 1px solid rgba(131, 128, 128, 0.133);
   border-right: 1px solid rgba(131, 128, 128, 0.133);
+  border-bottom: 1px solid rgba(131, 128, 128, 0.133);
   height: 87vh;
   width: 96%;
   right: 0%;
@@ -143,7 +146,7 @@
 
 .textDownSearch{
   border-bottom: 1px solid rgba(131, 128, 128, 0.133);
-  padding-bottom: 12px; 
+  /* padding-bottom: 12px;  */
   padding-top: 12px;
   display: inline-block
 }
@@ -197,6 +200,14 @@
 .border-b{
   border-bottom: 1px solid rgba(131, 128, 128, 0.133);
 }
+
+.border-tt{
+  border-top: 1px solid rgba(131, 128, 128, 0.133);
+}
+
+.border-t{
+  border-top: 1px solid rgba(131, 128, 128, 0.47);
+}
 .border-r{
   border-right: 1px solid rgba(131, 128, 128, 0.133);
 }
@@ -244,12 +255,18 @@
   .rounded-t-l {
     border-top-left-radius: 0.4rem;
   }
+  .rounded-t-r{
+    border-top-right-radius: 0.4rem;
+  }
 
   .s-home{
     width: 80%;
     height: 75%; 
     padding-top: 1.2rem; 
-    opacity: 0.6;
+    font-family: 'Quicksand', sans-serif;
+    /* letter-spacing: -1px; */
+
+
   }
 
   .my {
@@ -284,3 +301,160 @@
   .text-slate{
     color: rgb(85, 91, 98);
   }
+
+  .bg-black{
+    background-color: #000;
+  }
+
+  a{
+    text-decoration: none; color: inherit;
+  }
+
+  .text{
+    z-index: 6;
+    font-weight: 500;
+    font-size: 13.3vh;
+    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Inter', sans-serif;
+    color: transparent;
+    /* background-color: black; */
+    text-transform: uppercase;
+    /* text-shadow: 0 0 0 #333333; */
+    background: linear-gradient(260deg, black 25%,
+     white 25%, white 33%,
+      black 22%, black 37.5%,
+       white 37.5%, white 58% , 
+       black 58% , black 59.9%, 
+       white 59.9%, white 67%,
+       black 67%, black 69%,
+       white 69%, white 70.5%,
+       black 70.5%
+       );
+   
+    -webkit-background-clip: text;
+  }
+
+
+  .text-down{
+    z-index: 6;
+    font-weight: 500;
+    font-size: 13.3vh;
+    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Inter', sans-serif;
+    color: transparent;
+    /* background-color: black; */
+    text-transform: uppercase;
+    /* text-shadow: 0 0 0 #333333; */
+    background: linear-gradient(279deg, 
+    black 23%,white 23% , white 28.5%,
+    black 28.5%, black 36%,
+    white 36%, white 60%,
+    black 60%, black 64.2%,
+    white 64.2%, white 74%,
+    black 74%
+       );
+   
+    -webkit-background-clip: text;
+  }
+
+  .alink{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+
+  .alink:hover{
+    opacity: 1;
+  }
+
+  .tts{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 550;
+     font-size:small;
+     opacity: 0.6;
+  }
+
+  .brackets{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: small;
+    opacity: 0.6;
+
+
+  }
+
+  .header{
+    /* font-family: 'Quicksand', sans-serif; */
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -1px;
+  }
+  .header:hover{
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+ul{
+  list-style: none;
+}
+
+.home{
+  opacity: 0.7;
+  font-weight:530;
+  /* font-size: small; */
+  font-size: smaller;
+  /* font-size: medium; */
+  /* line-height: 2px; */
+  /* font- */
+  letter-spacing: -0.2px;
+
+  /* font-size: 15px; */
+ 
+}
+.home:hover{
+  opacity: 0.9;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+
+.txtlogo{
+  display: flex;
+  justify-content: center;
+  transform: rotate(270deg);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+
+}
+
+.aboutus{
+  transform: rotate(269.5deg);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.6px;
+  /* height: 80%; */
+}
+
+
+.tts:hover{
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.textld{
+  font-family:  'Quicksand', sans-serif;
+  letter-spacing: -0.6px;
+  font-weight:500;
+  font-size: small;
+  line-height: 1.5;
+}

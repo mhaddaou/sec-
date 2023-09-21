@@ -3,7 +3,7 @@
       class="container h-full w-full  mx-auto "
       style="   overflow: hidden; background-color: white;"
     >
-    <div  class="w-full" style="height: 30%; background-color: ;">
+    <div  class="w-full" style="height: 30%;">
       <div
          class="gri h-full"
          style="border-bottom: 1px solid rgba(131, 128, 128, 0.32);"
